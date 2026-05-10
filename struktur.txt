@@ -1,0 +1,11 @@
+Auflistung der Ordnerpfade für Volume System
+Volumeseriennummer : E457-8BCD
+C:\USERS\SWAT1\SOURCE\REPOS\REMOTEDOCKSERVICE
+|   .gitignore
+|   LICENSE
+|   README.md
+|   struktur.txt
+|   
++---installer
++---release
+\---src
