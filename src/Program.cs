@@ -10,11 +10,10 @@ namespace RemoteDockService
         {
             var listener = new HttpListener();
             listener.Prefixes.Add("http://+:8080/");
-            
+
             try
             {
                 listener.Start();
-                Console.WriteLine("Server läuft auf Port 8080");
 
                 while (true)
                 {
@@ -22,11 +21,7 @@ namespace RemoteDockService
                     ThreadPool.QueueUserWorkItem(_ => HandleRequest(context));
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Fehler: " + ex.Message);
-                Console.ReadLine();
-            }
+            catch { }
         }
 
         static void HandleRequest(HttpListenerContext context)
